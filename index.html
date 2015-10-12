@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>Жизнь</title>
+  <script type="text/javascript" src="gameOfLife.js"></script>
+  <style>
+  #halma_canvas{
+  	margin-right: 20px;
+  }
+  #halma_canvas2{
+  	cursor: move;
+  }
+  </style>
+</head>
+<body>
+	<button onclick="startGame()">Начать игру</button>
+	<button onclick="endGame()">Остановить игру</button>
+  <button onclick="newGame()">Очистить поле</button>
+	<button onclick="startDrowing()" id="startDrowing">Включить режим рисования</button>
+	<button onclick="addFigureCross()" id="addFigureCross">Добавить крест</button>
+  <button onclick="addFigureGlider()" id="addFigureGlider">Добавить планер</button>
+  <p id="moves">Ходов: <span id="movecount">0</span> <span id="gameOver">   Игра окончена!</span></p>
+  <canvas id="game"></canvas>
+  <script>
+    initGame();
+  </script>
+</body>
+</html>
